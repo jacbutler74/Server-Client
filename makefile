@@ -6,9 +6,9 @@ client.exe: client.o
 client.o: client.cpp
 	g++ -c client.cpp
 
-runC: client.exe
+run: client.exe
 	./client.exe localhost
 
-cleanC:
+clean:
 	del client.exe
 	del client.o
